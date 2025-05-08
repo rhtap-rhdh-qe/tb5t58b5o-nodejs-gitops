@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: tb5t58b5o-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: tb5t58b5o-nodejs 
+  name: tb5t58b5o-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: tb5t58b5o-nodejs 
